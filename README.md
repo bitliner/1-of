@@ -59,3 +59,6 @@ streamify([2, 4, 6]) // stream an array of integer
 2. `node example/run.js`
 
 
+# TODO
+
+[ ] - Logging
