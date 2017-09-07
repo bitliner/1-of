@@ -9,7 +9,7 @@ Based on Redis and Kue.
 **Create a computing unit**
 
 ```
-const Computing = require('../').computing;
+const Computing = require('1-of').computing;
 
 module.exports = new Computing('double', (input, progress, done) => {
   progress(0, 0, input * 2);
@@ -21,7 +21,7 @@ NB: you can return more than 1 result by using progress.
 **Create a runner**
 
 ```
-const Runner = require('../').runner;
+const Runner = require('1-of').runner;
 const streamify = require('stream-array');
 const {Transform} = require('stream');
 
